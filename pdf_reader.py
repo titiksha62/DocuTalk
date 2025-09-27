@@ -20,7 +20,7 @@ top_k = st.sidebar.slider("🔍 Top N Relevant Chunks", min_value=1, max_value=1
 def test_api_key(key):
     try:
         genai.configure(api_key=key)
-        _ = genai.embed_content(model="models/embedding-001", content="test")  # Try embedding
+        _ = genai.embed_content(model="gemini-embedding-001", content="test")  # Try embedding
         return True
     except Exception as e:
         return False
@@ -94,3 +94,4 @@ Answer:"""
         st.sidebar.error("❌ Invalid Gemini API key. Please try again.")
 else:
     st.sidebar.info("🔐 Please enter your Gemini API key to begin.")
+
