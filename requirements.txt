@@ -1,8 +1,6 @@
 streamlit
 PyPDF2
-langchain
 langchain-text-splitters
-google-generativeai
 google-genai
 numpy
 scikit-learn
